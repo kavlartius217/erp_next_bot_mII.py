@@ -1,0 +1,9 @@
+crewai
+crewai-tools
+langchain-community
+pymysql
+pysqlite3-binary
+pandas
+seaborn
+matplotlib
+streamlit
