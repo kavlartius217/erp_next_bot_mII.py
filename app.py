@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import os
@@ -19,7 +18,7 @@ from crewai import LLM, Agent, Task, Crew, Process
 from crewai.tools import BaseTool
 from pydantic import Field
 
-    # Configure page
+# Configure page
 st.set_page_config(
     page_title="ERP Analytics Dashboard",
     page_icon="📊",
@@ -133,8 +132,6 @@ st.markdown("""
         border: 1px solid #e5e7eb;
     }
     
-
-    
     .sidebar-content {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 1rem;
@@ -175,7 +172,7 @@ if 'visualization_paths' not in st.session_state:
 def initialize_database():
     """Initialize database connection"""
     try:
-       openai_api_key = os.getenv("OPENAI_API_KEY")
+        openai_api_key = os.getenv("OPENAI_API_KEY")
         
         password = urllib.parse.quote_plus("Ispl@2025")
         DATABASE_URI = f"mysql+pymysql://kavin:{password}@192.168.1.134:3306/_b7843b7b27adc018"
